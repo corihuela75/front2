@@ -1,0 +1,58 @@
+/* SECCION TARJETAS */
+
+.cert-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  gap: 20px;
+  padding: 20px;
+}
+
+.cert-card {
+  background-color: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  transition: transform 0.2s ease;
+}
+
+.cert-card:hover {
+  transform: scale(1.02);
+}
+
+.logo {
+  height: 50px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  margin: 0;
+  font-weight: 1000;
+}
+
+.inst {
+  color: #555;
+  font-size: 1.2rem;
+  font-weight: 800;
+}
+
+.fecha, .skills {
+  font-size: 1rem;
+  color: #666;
+  margin: 0.1rem 0;
+}
+
+.credencial {
+  font-size: 1rem;
+  color: orange;
+  text-decoration: none;
+  margin-top: auto;
+}
+
+.credencial:hover {
+  text-decoration: underline;
+}

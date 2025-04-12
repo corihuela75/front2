@@ -1,0 +1,68 @@
+/* SECCION BANNER */
+
+.banner-img {
+  width: 100%;
+  min-width: 1170px;
+  height: 600px;
+  background-blend-mode: lighten;
+  background: url("../img/mdp.jpg") no-repeat center;
+}
+
+.banner-texto {
+  /* padding-bottom: 10px; */
+  padding-top: 250px;
+  padding-left: 20%;
+  padding-right: 30%;
+}
+
+.banner-texto h1 {
+  color: #252525;
+  font-size: 3rem;
+  line-height: 3rem;
+  margin-bottom: 30px;
+}
+
+.banner-texto h5 {
+  color: #252525;
+  letter-spacing: 1px;
+  margin-bottom: 11px;
+  font-size: 1.5rem;
+}
+
+.banner-texto p {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  background-color: #ababab;
+  line-height: 1.5rem;
+  font-size: 1.3rem;
+}
+
+.banner-links {
+  font-size: 1.3rem;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px 20px;
+  text-shadow: 
+    -2px -2px 0 grey,  
+     2px -2px 0 grey,  
+    -2px  2px 0 grey,  
+     2px  2px 0 grey; 
+}
+
+.banner-texto h5,
+.banner-texto h1
+  {
+  text-shadow: 
+    -1px -1px 0 grey,  
+     1px -1px 0 grey,  
+    -1px  1px 0 grey,  
+     1px  1px 0 grey; 
+}
+
+.banner-links:hover {
+  color: orange;
+  text-decoration: underline;
+}
+

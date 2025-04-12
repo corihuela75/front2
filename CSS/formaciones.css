@@ -1,0 +1,45 @@
+/* SECCION FORMACION y EXPERIENCIA */
+
+.formaciones-tabla {
+  display: flex;
+  width: 100%;
+  padding: 20px;
+}
+
+.formaciones-tabla-educacion,
+.formaciones-tabla-experiencia {
+  width: 50%;
+  font-family: "Montserrat", sans-serif;
+  vertical-align: top;
+}
+
+.formacion-item-year {
+  width: fit-content;
+  padding: 5px;
+  color: #ffffff;
+  position: relative;
+  font-weight: bold;
+  line-height: 1.1em;
+  margin: 0 0 3px;
+  background-color: #f39c12;
+  padding: 5px 8px 5px 20px;
+  margin-left: -2px;
+}
+
+.formacion-item-datos {
+  padding-left: 20px;
+}
+
+.formacion-item-datos_titulo {
+  padding-top: 10px;
+  color: #414141;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-stretch: condensed;
+}
+
+.formacion-item-datos_subtitulo {
+  font-size: 1rem;
+  color: #6a6a6a;
+  font-stretch: condensed;
+}
