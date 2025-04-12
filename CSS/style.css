@@ -1,10 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inspiration&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap");
-
+/* CSS Document */
 /* SECCION GENERAL */
 body {
   background-color: white;
@@ -30,7 +24,7 @@ h6 {
   font-weight: 600;
   color: #4f4f4f;
   margin: 0 0 1rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 
 .activo {
