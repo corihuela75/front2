@@ -1,9 +1,11 @@
 ## Archivo `README.md` y Checklist
 
+👋 ¡Hola! soy Cristian Orihuela
+💻 Estudiante de la Tecnicatura en Desarrollo de Software 
 
-# 👋 ¡Hola! soy Cristian Orihuela
-
-### 💻 Estudiante de la Tecnicatura en Desarrollo de Software 
+----------------------------------------------------------- 
+-                         PFO1                            -
+-----------------------------------------------------------
 
 ## 1. Descripción del Proyecto:
 - El objetivo de esta práctica es que cada estudiante desarrolle una Landing Page de Portafolio Personal utilizando únicamente HTML y CSS. Esta landing page debe representar de forma profesional y creativa la identidad del estudiante, incluyendo información como su nombre, una breve biografía, habilidades, proyectos realizados, y medios de contacto.
@@ -77,4 +79,29 @@
 - [x] Se aplicaron buenas prácticas de accesibilidad (por ejemplo, uso adecuado de atributos `alt` en las imágenes).
 - [ ] Se añadieron comentarios adicionales donde se describan decisiones de diseño o la lógica de implementación.
 
----
+----------------------------------------------------------- 
+-                         PFO2                            -
+-----------------------------------------------------------
+
+## Punto 1 - Funcionalidades con JavaScript
+
+1) Validaciones de formulario: en html se agregan a los campos del formulario los mensajes de error dentro
+de etiquetas span ocultas, que se muestran interactivamente de acuerdo al script, que escucha cada vez que
+se envia, y verifica que los campos esten completos. Además el código regex de validación del mmail revisa
+que haya una @, que no haya un espacio u otra arroba a la izquierda ni a la derecha, luego espera que haya
+un punto y a su derecha ni espacios ni arrobas. Se agrega el estilo css de error.
+2) Pop-up de Confirmación de Envío: se agrega un modal en html y css oculto y de posicion fija ocupando toda
+la pantalla para mostrar un el mensaje, con un efecto de opacidad del fondo y un boton para aceptar y cerrarse.
+Luego en javascript una función para cambiar el estilo y mostrar el popup luego de validar los campos y otra
+para ocultarlo despues de presionar el boton de aceptar.
+3) Modo Oscuro/Claro: se agrega boton para cambiar de modo oscuro a modo claro, utilizando localStorage para
+recordar la preferencia del usuario. Al cargar la página, se verifica el estado almacenado y se ajusta el tema
+según el valor guardado. Al hacer clic en el enlace, se alterna entre los modos y se guarda la nueva preferencia
+en localStorage para que persista en futuras visitas.
+En lugar de modificar manualmente todos los estilos, se definen las variables para los colores principales
+(como fondo, texto, enlaces, etc.) y luego se cambia el valor de estas variables según el modo seleccionado.
+Esto se logra mediante la propiedad var(), lo que permite un cambio global del diseño con solo modificar el
+valor de las variables, sin necesidad de cambiar cada regla CSS individualmente. 
+4) Imagen de las credenciales:  Añadí un contenedor dentro de cada tarjeta, que contiene la etiqueta <img>
+con la URL de la imagen del certificado, con un estilo css que no se muestra. Al hacer click, con javascript,
+se alterna el estilo css permitiendo ver la imagen u ocultarla.

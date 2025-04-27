@@ -36,7 +36,7 @@
                 <ul class="top-menu-lista">
                     <li class="top-menu-lista-item"><a href="#home" class="activo menu-lista-link">Home</a></li>
                     <li class="top-menu-lista-item"><a href="#sobre-mi" class="menu-lista-link">Sobre mi</a></li>
-                    <li class="top-menu-lista-item"><a href="#habilidades" class="menu-lista-link">Cursos</a></li>
+                    <li class="top-menu-lista-item"><a href="#tarjetas" class="menu-lista-link">Cursos</a></li>
                     <li class="top-menu-lista-item"><a href="#formacion" class="menu-lista-link">Formación y
                             Experiencia</a></li>
                     <li class="top-menu-lista-item"><a href="#series" class="menu-lista-link">Series</a></li>
@@ -49,6 +49,8 @@
         <section class="banner">
             <div class="banner-img">
                 <div class="banner-texto">
+                    <a id="modo-toggle" class="btn links">Modo oscuro</a>
+                    <br><br><br><br>
                     <h5>Hola! mi nombre es</h5>
                     <h1>Cristian Orihuela</h1>
                     <p>Soy estudiante de la Tecnicatura en Desarrollo de Software, con una sólida
@@ -57,7 +59,6 @@
                     <a class="banner-links" href="https://github.com/corihuela75">Github ❭❭</a>
                     <a class="banner-links" href="https://www.linkedin.com/in/cristian-orihuela/">Linkedin
                         ❭❭</a><br><br>
-                    <a class="btn links" href="https://github.com/corihuela75">Mi Repositorio</a>
                 </div>
             </div>
         </section>
@@ -126,6 +127,11 @@
                     <p class="fecha">Expedición: mar. 2024</p>
                     <p class="skills">Aptitudes: Odoo · ERP</p>
                     <p><a href="#" class="credencial">Mostrar credencial</a></p>
+                    <!-- Contenedor de detalles -->
+                    <div class="detalles" >
+                        <img src="https://github.com/corihuela75/certificados/blob/main/Certificado%20Escuelita%20Odoo%202024.png?raw=true"
+                         alt="Certificado Escuelita Odoo 2024" class="credencial-img">
+                    </div>
                 </div>
 
                 <!-- Tarjeta 2 -->
@@ -136,6 +142,11 @@
                     <p class="fecha">Expedición: ene. 2024</p>
                     <p class="skills">Aptitudes: Docker</p>
                     <p><a href="#" class="credencial">Mostrar credencial</a></p>
+                    <!-- Contenedor de detalles -->
+                    <div class="detalles" >
+                        <img src="https://github.com/corihuela75/certificados/blob/main/Certificado%20Profesional%20de%20Docker.png?raw=true"
+                         alt="Certificado Profesional de Docker" class="credencial-img"> 
+                    </div>
                 </div>
 
                 <!-- Tarjeta 3 -->
@@ -147,6 +158,11 @@
                     <p class="skills">Aptitudes: Cloud computing y los servicios que ofrece Oracle en
                         su infraestructura en la nube.</p>
                     <p><a href="#" class="credencial">Mostrar credencial</a></p>
+                    <!-- Contenedor de detalles -->
+                    <div class="detalles" >
+                        <img src="https://github.com/corihuela75/certificados/blob/main/Certificado%20Oracle%20Cloud%20Infrastructure.png?raw=true"
+                         alt="Certificado Oracle Cloud infraestructure" class="credencial-img"> 
+                    </div>
                 </div>
 
                 <!-- Tarjeta 4 -->
@@ -157,6 +173,11 @@
                     <p class="fecha">Expedición: Jun. 2022</p>
                     <p class="skills">Aptitudes: Desarrollo Front End y Back End</p>
                     <p><a href="#" class="credencial">Mostrar credencial</a></p>
+                    <!-- Contenedor de detalles -->
+                    <div class="detalles" >
+                        <img src="https://github.com/corihuela75/certificados/blob/main/Certificado%20Alura%20ONE.png?raw=true"
+                         alt="Certificado Alura ONE" class="credencial-img"> 
+                    </div>
                 </div>
             </div>
             </div>
@@ -389,18 +410,35 @@
                 </table>
             </div>
             <div class="contacto-der">
-                <form action="">
-                    <input class="contacto-input" type="text" name="tu-nombre" placeholder="Tu Nombre">
-                    <input class="contacto-input" type="text" name="tu-email" placeholder="Tu email">
-                    <textarea class="contacto-textarea" name="tu-texto" id="" cols="30" rows="10"
-                        placeholder="Texto"></textarea>
-                    <input class="contacto-submit btn" type="submit" name="Cris" placeholder="Holi">
+                <form id="formulario-contacto" action="">
+                    <div class="campo">
+                        <input class="contacto-input" type="text" name="tu-nombre" placeholder="Tu Nombre" id="nombre">
+                        <span class="error" id="error-nombre"></span>
+                    </div>
+                    <div class="campo">
+                        <input class="contacto-input" type="text" name="tu-email" placeholder="Tu email" id="email">
+                        <span class="error" id="error-email"></span>
+                    </div>
+                    <div class="campo">
+                        <textarea class="contacto-textarea" name="tu-texto" placeholder="Texto" id="texto"></textarea>
+                        <span class="error" id="error-texto"></span>
+                    </div>
+                    <input class="contacto-submit btn" type="submit" value="Enviar">
                 </form>
+
+                <!-- Popup de mensaje enviado correctamente -->
+                <div id="popup-exito" class="popup">
+                    <div class="popup-contenido">
+                        <p>¡Mensaje enviado correctamente!</p>
+                        <button onclick="cerrarPopup()">Aceptar</button>
+                    </div>
+                </div>
+
+
             </div>
         </section>
     </main>
     <footer class="footer">
-
         <div class="footer-iconos fondo-oscuro">
             <div>
                 <a href="https://www.facebook.com/cmorihuela/"><i id="social-fb"
@@ -414,11 +452,109 @@
             <div>
                 <p>2025 © Copyright <span>Cristian Orihuela. </span>All rights Reserved.</p>
             </div>
-
         </div>
         <a id="scrollUp" href="#top" style="position: fixed; z-index: 2147483647; display: block;">UP</a>
     </footer>
 
+    <!-- SCRIPT DE VALIDACION DE LOS CAMPOS DEL FORMULARIO -->
+    <script>
+        document.getElementById('formulario-contacto').addEventListener('submit', function (event) {
+            // Limpiar errores anteriores
+            document.getElementById('error-nombre').style.display = 'none';
+            document.getElementById('error-email').style.display = 'none';
+            document.getElementById('error-texto').style.display = 'none';
+
+            var nombre = document.getElementById('nombre').value.trim();
+            var email = document.getElementById('email').value.trim();
+            var texto = document.getElementById('texto').value.trim();
+
+            var validado = true;
+
+            // Validación del nombre
+            if (nombre === '') {
+                document.getElementById('error-nombre').innerText = 'Por favor, ingresa tu nombre.';
+                document.getElementById('error-nombre').style.display = 'block';
+                validado = false;
+            }
+
+            // Validación del email
+            var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (email === '') {
+                document.getElementById('error-email').innerText = 'Por favor, ingresa tu email.';
+                document.getElementById('error-email').style.display = 'block';
+                validado = false;
+            } else if (!emailRegex.test(email)) {
+                document.getElementById('error-email').innerText = 'Por favor, ingresa un email válido.';
+                document.getElementById('error-email').style.display = 'block';
+                validado = false;
+            }
+
+            // Validación del texto
+            if (texto === '') {
+                document.getElementById('error-texto').innerText = 'Por favor, ingresa un mensaje.';
+                document.getElementById('error-texto').style.display = 'block';
+                validado = false;
+            }
+
+            // Si todo está validado, mostramos el popup
+            if (validado) {
+                event.preventDefault();
+                mostrarPopup();
+                document.getElementById('formulario-contacto').reset();
+            } else {
+                event.preventDefault();
+            }
+        });
+
+        // MOSTRAR Y CERRAR EL POPUP
+        function mostrarPopup() {
+            document.getElementById('popup-exito').style.display = 'flex';
+        }
+
+        function cerrarPopup() {
+            document.getElementById('popup-exito').style.display = 'none';
+        }
+
+        // MODO OSCURO Y CLARO CON LOCAL STORAGE
+        document.addEventListener('DOMContentLoaded', function () {
+            // Verificar el estado del modo almacenado en el localStorage al cargar la página
+            if (localStorage.getItem('modoOscuro') === 'true') {
+                document.body.classList.add('oscuro'); // Si está guardado como 'true', activamos el modo oscuro
+                document.getElementById('modo-toggle').innerText = 'Modo claro'; // Cambiar el texto del enlace
+            } else {
+                document.body.classList.remove('oscuro'); // Si no está guardado o es 'false', mantenemos el modo claro
+                document.getElementById('modo-toggle').innerText = 'Modo oscuro'; // Cambiar el texto del enlace
+            }
+
+            // Agregar el evento click al enlace con el ID 'modo-toggle'
+            document.getElementById('modo-toggle').addEventListener('click', function (event) {
+                event.preventDefault(); // Evita que el enlace haga scroll o recargue la página
+
+                // Alternar la clase 'oscuro' en el body
+                document.body.classList.toggle('oscuro');
+
+                // Guardar la preferencia en el localStorage
+                if (document.body.classList.contains('oscuro')) {
+                    localStorage.setItem('modoOscuro', 'true'); // Guardar 'true' para el modo oscuro
+                    this.innerText = 'Modo claro'; // Cambiar el texto del enlace
+                } else {
+                    localStorage.setItem('modoOscuro', 'false'); // Guardar 'false' para el modo claro
+                    this.innerText = 'Modo oscuro'; // Cambiar el texto del enlace
+                }
+            });
+        });
+
+        // AGREGAR EVENTO A CREDENCIAL
+        const credenciales = document.querySelectorAll('.credencial');
+        credenciales.forEach(credencial => {
+            credencial.addEventListener('click', function (e) {
+                e.preventDefault();
+                const tarjeta = this.closest('.cert-card');
+                const detalle = tarjeta.querySelector('.detalles'); 
+                detalle.classList.toggle('mostrar');  
+            });
+        });
+    </script>
 </body>
 
 </html>

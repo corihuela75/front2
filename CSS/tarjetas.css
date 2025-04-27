@@ -2,13 +2,14 @@
 
 .cert-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr); /* 4 columnas iguales */
+  grid-template-columns: repeat(4, 1fr);
+  /* 4 columnas iguales */
   gap: 20px;
   padding: 20px;
 }
 
 .cert-card {
-  background-color: #fff;
+  background-color: var(--color-fondo);
   border-radius: 16px;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
   padding: 20px;
@@ -40,7 +41,8 @@ h3 {
   font-weight: 800;
 }
 
-.fecha, .skills {
+.fecha,
+.skills {
   font-size: 1rem;
   color: #666;
   margin: 0.1rem 0;
@@ -55,4 +57,19 @@ h3 {
 
 .credencial:hover {
   text-decoration: underline;
+}
+
+.detalles.mostrar {
+  display: block;
+}
+
+.detalles {
+  display: none;
+}
+
+.credencial-img {
+  width: 100%; /* O cualquier tamaño que se ajuste a tu diseño */
+  max-width: 500px; /* Limitar el tamaño máximo de la imagen */
+  margin: 0 auto; /* Centrar la imagen */
+  display: block;
 }

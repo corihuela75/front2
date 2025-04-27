@@ -6,7 +6,7 @@
   position: fixed;
   display: flex;
   justify-content: center;
-  background: #ffffff;
+  background: var(--color-fondo);
   z-index: 99;
   border-bottom: #f5f5f5 solid 1px;
 }
