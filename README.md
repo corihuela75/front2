@@ -3,9 +3,10 @@
 👋 ¡Hola! soy Cristian Orihuela
 💻 Estudiante de la Tecnicatura en Desarrollo de Software 
 
------------------------------------------------------------ 
--                         PFO1                            -
------------------------------------------------------------
+
+# PFO1                            -
+--- 
+
 
 ## 1. Descripción del Proyecto:
 - El objetivo de esta práctica es que cada estudiante desarrolle una Landing Page de Portafolio Personal utilizando únicamente HTML y CSS. Esta landing page debe representar de forma profesional y creativa la identidad del estudiante, incluyendo información como su nombre, una breve biografía, habilidades, proyectos realizados, y medios de contacto.
@@ -79,9 +80,9 @@
 - [x] Se aplicaron buenas prácticas de accesibilidad (por ejemplo, uso adecuado de atributos `alt` en las imágenes).
 - [ ] Se añadieron comentarios adicionales donde se describan decisiones de diseño o la lógica de implementación.
 
------------------------------------------------------------ 
--                         PFO2                            -
------------------------------------------------------------
+
+# PFO2                            
+---
 
 ## Punto 1 - Funcionalidades con JavaScript
 
@@ -90,11 +91,14 @@ de etiquetas span ocultas, que se muestran interactivamente de acuerdo al script
 se envia, y verifica que los campos esten completos. Además el código regex de validación del mmail revisa
 que haya una @, que no haya un espacio u otra arroba a la izquierda ni a la derecha, luego espera que haya
 un punto y a su derecha ni espacios ni arrobas. Se agrega el estilo css de error.
-2) Pop-up de Confirmación de Envío: se agrega un modal en html y css oculto y de posicion fija ocupando toda
+2) Ocultar y/o Mostrar Contenido: se añade un contenedor dentro de cada tarjeta, que contiene la etiqueta <img>
+con la URL de la imagen del certificado, con un estilo css que no se muestra. Al hacer click, con javascript,
+se alterna el estilo css permitiendo ver la imagen u ocultarla.
+3) Pop-up de Confirmación de Envío: se agrega un modal en html y css oculto y de posicion fija ocupando toda
 la pantalla para mostrar un el mensaje, con un efecto de opacidad del fondo y un boton para aceptar y cerrarse.
 Luego en javascript una función para cambiar el estilo y mostrar el popup luego de validar los campos y otra
 para ocultarlo despues de presionar el boton de aceptar.
-3) Modo Oscuro/Claro: se agrega boton para cambiar de modo oscuro a modo claro, utilizando localStorage para
+4) Modo Oscuro/Claro: se agrega boton para cambiar de modo oscuro a modo claro, utilizando localStorage para
 recordar la preferencia del usuario. Al cargar la página, se verifica el estado almacenado y se ajusta el tema
 según el valor guardado. Al hacer clic en el enlace, se alterna entre los modos y se guarda la nueva preferencia
 en localStorage para que persista en futuras visitas.
@@ -102,6 +106,26 @@ En lugar de modificar manualmente todos los estilos, se definen las variables pa
 (como fondo, texto, enlaces, etc.) y luego se cambia el valor de estas variables según el modo seleccionado.
 Esto se logra mediante la propiedad var(), lo que permite un cambio global del diseño con solo modificar el
 valor de las variables, sin necesidad de cambiar cada regla CSS individualmente. 
-4) Imagen de las credenciales:  Añadí un contenedor dentro de cada tarjeta, que contiene la etiqueta <img>
-con la URL de la imagen del certificado, con un estilo css que no se muestra. Al hacer click, con javascript,
-se alterna el estilo css permitiendo ver la imagen u ocultarla.
+5) Acordeón: se modifica por completo la sección de formación y experiencia, reemplazando todos los estilos
+css, para incorporar un efecto de acordeón que amplía la información de cada item. En este caso se hace una seleccion
+multiple de todos los elementos y se los recorre con un ciclo foreach para asignar a cada una la interactividad,
+modificando las propiedades css desde javascript.
+
+
+## Punto 2 - Mejoras o Cambios en el Diseño y Código
+
+1) Al implementar Flexbox en el diseño, se logró que el logo y la barra de navegación se ubiquen en la misma 
+línea sin superponerse, lo que proporciona una estructura más flexible y profesional, ideal para pantallas grandes
+y adaptaciones responsivas, mejorando así la presentación visual del sitio.
+
+2) Se mejora toda la seccion superior: top, barra de navegación y banner para obtener una mejor legibilidad y contraste.
+Estos cambios se realizaron porque la imagen elegida (en escala de grises) hacía muy dificultosa la lectura de los textos
+que se superponen, al usar para los tipos de letra una paleta de colores elejida para el tema del portafolio que utiliza
+negro, blanco y grises. Cambiando la imagen de fondo por otra en tonos naranja que hacen a la identidad del sitio, se logran
+destacar los textos.
+
+
+Se adjuntan las capturas del portafolio como estaba para la PFO1 y como queda para la PFO2
+
+<img src="Antes.png" alt="Mi portafolio PFO1" width="400" style="vertical-align: top;" />
+<img src="Despues.png" alt="Mi portafolio PFO2" width="400" style="vertical-align: top;" />

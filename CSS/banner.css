@@ -1,18 +1,30 @@
 /* SECCION BANNER */
 
-.banner-img {
+body {
+  padding-top: 20px;
+  /* Ajusta esto al alto de tu barra de navegación */
+}
+
+.banner {
   width: 100%;
-  min-width: 1170px;
-  height: 600px;
-  background-blend-mode: lighten;
-  background: url("../img/mdp.jpg") no-repeat center;
+  height: 400px;
+  background: url('../img/fondo_naranja.jpg') no-repeat center center;
+  background-size: cover;
+  position: relative;
+  border-radius: 20px;
+  /* Bordes redondeados */
+  margin-top: 60px;
+  /* Evita que el banner quede cubierto por la barra fija */
 }
 
 .banner-texto {
-  /* padding-bottom: 10px; */
-  padding-top: 100px;
-  padding-left: 20%;
-  padding-right: 30%;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  z-index: 2;
+  text-align: left;
 }
 
 .banner-texto h1 {
@@ -29,40 +41,20 @@
   font-size: 1.5rem;
 }
 
-.banner-texto p {
-  font-family: "Poppins", sans-serif;
-  color: #ffffff;
-  background-color: #ababab;
-  line-height: 1.5rem;
-  font-size: 1.3rem;
-}
-
 .banner-links {
-  font-size: 1.3rem;
-  color: #ffffff;
-  font-family: "Montserrat", sans-serif;
-  font-weight: 600;
+  display: inline-block;
+  margin-right: 10px;
+  color: white;
   text-decoration: none;
-  padding: 10px 20px;
-  text-shadow: 
-    -2px -2px 0 grey,  
-     2px -2px 0 grey,  
-    -2px  2px 0 grey,  
-     2px  2px 0 grey; 
-}
-
-.banner-texto h5,
-.banner-texto h1
-  {
-  text-shadow: 
-    -1px -1px 0 grey,  
-     1px -1px 0 grey,  
-    -1px  1px 0 grey,  
-     1px  1px 0 grey; 
+  font-weight: bold;
 }
 
 .banner-links:hover {
-  color: orange;
   text-decoration: underline;
 }
 
+.banner-modo {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}

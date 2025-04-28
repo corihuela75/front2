@@ -8,7 +8,13 @@
   justify-content: center;
   background: var(--color-fondo);
   z-index: 99;
-  border-bottom: #f5f5f5 solid 1px;
+}
+
+.top2 {
+  width: 1170px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .top-logo {
@@ -24,7 +30,7 @@
   align-items: center;
   justify-content: center;
   font-family: 'Segoe UI', sans-serif;
-  box-shadow: 2px 2px 8px rgba(0,0,0,0.3);
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 .top-menu {

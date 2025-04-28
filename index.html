@@ -28,37 +28,39 @@
     <header>
         <!-- SECCION NAV -->
         <a name="home"></a>
-        <section class="top ancho-pagina">
-            <div class="top-logo">
-                CO
+        <section class="top">
+            <div class="top2">
+                <div class="top-logo">
+                    CO
+                </div>
+                <nav class="top-menu">
+                    <ul class="top-menu-lista">
+                        <li class="top-menu-lista-item"><a href="#home" class="activo menu-lista-link">Home</a></li>
+                        <li class="top-menu-lista-item"><a href="#sobre-mi" class="menu-lista-link">Sobre mi</a></li>
+                        <li class="top-menu-lista-item"><a href="#tarjetas" class="menu-lista-link">Cursos</a></li>
+                        <li class="top-menu-lista-item"><a href="#formacion" class="menu-lista-link">Formación y
+                                Experiencia</a></li>
+                        <li class="top-menu-lista-item"><a href="#series" class="menu-lista-link">Series</a></li>
+                        <li class="top-menu-lista-item"><a href="#contacto" class="menu-lista-link">Contacto</a></li>
+                    </ul>
+                </nav>
             </div>
-            <nav class="top-menu">
-                <ul class="top-menu-lista">
-                    <li class="top-menu-lista-item"><a href="#home" class="activo menu-lista-link">Home</a></li>
-                    <li class="top-menu-lista-item"><a href="#sobre-mi" class="menu-lista-link">Sobre mi</a></li>
-                    <li class="top-menu-lista-item"><a href="#tarjetas" class="menu-lista-link">Cursos</a></li>
-                    <li class="top-menu-lista-item"><a href="#formacion" class="menu-lista-link">Formación y
-                            Experiencia</a></li>
-                    <li class="top-menu-lista-item"><a href="#series" class="menu-lista-link">Series</a></li>
-                    <li class="top-menu-lista-item"><a href="#contacto" class="menu-lista-link">Contacto</a></li>
-                </ul>
-            </nav>
         </section>
 
         <!-- SECCION BANNER -->
         <section class="banner">
             <div class="banner-img">
                 <div class="banner-texto">
-                    <a id="modo-toggle" class="btn links">Modo oscuro</a>
+                    <a id="modo-toggle" class="btn links banner-modo">Modo oscuro</a>
                     <br><br><br><br>
                     <h5>Hola! mi nombre es</h5>
                     <h1>Cristian Orihuela</h1>
                     <p>Soy estudiante de la Tecnicatura en Desarrollo de Software, con una sólida
                         trayectoria previa en el área administrativa y contable.</p>
-                    <a class="banner-links" href="https://www.facebook.com/cmorihuela/">Facebook ❭❭</a>
+                    <p><a class="banner-links" href="https://www.facebook.com/cmorihuela/">Facebook ❭❭</a>
                     <a class="banner-links" href="https://github.com/corihuela75">Github ❭❭</a>
                     <a class="banner-links" href="https://www.linkedin.com/in/cristian-orihuela/">Linkedin
-                        ❭❭</a><br><br>
+                        ❭❭</a><br><br></p>
                 </div>
             </div>
         </section>
@@ -128,9 +130,9 @@
                     <p class="skills">Aptitudes: Odoo · ERP</p>
                     <p><a href="#" class="credencial">Mostrar credencial</a></p>
                     <!-- Contenedor de detalles -->
-                    <div class="detalles" >
+                    <div class="detalles">
                         <img src="https://github.com/corihuela75/certificados/blob/main/Certificado%20Escuelita%20Odoo%202024.png?raw=true"
-                         alt="Certificado Escuelita Odoo 2024" class="credencial-img">
+                            alt="Certificado Escuelita Odoo 2024" class="credencial-img">
                     </div>
                 </div>
 
@@ -143,9 +145,9 @@
                     <p class="skills">Aptitudes: Docker</p>
                     <p><a href="#" class="credencial">Mostrar credencial</a></p>
                     <!-- Contenedor de detalles -->
-                    <div class="detalles" >
+                    <div class="detalles">
                         <img src="https://github.com/corihuela75/certificados/blob/main/Certificado%20Profesional%20de%20Docker.png?raw=true"
-                         alt="Certificado Profesional de Docker" class="credencial-img"> 
+                            alt="Certificado Profesional de Docker" class="credencial-img">
                     </div>
                 </div>
 
@@ -159,9 +161,9 @@
                         su infraestructura en la nube.</p>
                     <p><a href="#" class="credencial">Mostrar credencial</a></p>
                     <!-- Contenedor de detalles -->
-                    <div class="detalles" >
+                    <div class="detalles">
                         <img src="https://github.com/corihuela75/certificados/blob/main/Certificado%20Oracle%20Cloud%20Infrastructure.png?raw=true"
-                         alt="Certificado Oracle Cloud infraestructure" class="credencial-img"> 
+                            alt="Certificado Oracle Cloud infraestructure" class="credencial-img">
                     </div>
                 </div>
 
@@ -174,9 +176,9 @@
                     <p class="skills">Aptitudes: Desarrollo Front End y Back End</p>
                     <p><a href="#" class="credencial">Mostrar credencial</a></p>
                     <!-- Contenedor de detalles -->
-                    <div class="detalles" >
+                    <div class="detalles">
                         <img src="https://github.com/corihuela75/certificados/blob/main/Certificado%20Alura%20ONE.png?raw=true"
-                         alt="Certificado Alura ONE" class="credencial-img"> 
+                            alt="Certificado Alura ONE" class="credencial-img">
                     </div>
                 </div>
             </div>
@@ -185,7 +187,7 @@
 
         <!-- SECCION FORMACION Y EXPERIENCIA -->
         <a name="formacion"></a>
-        <section class="formaciones fondo-claro ancho-pagina">
+        <section class="formaciones fondo-claro ancho-pagina acordeon-seccion">
             <div class="txt-center">
                 <h2>FORMACION y EXPERIENCIA</h2>
             </div>
@@ -193,103 +195,83 @@
                 <div class="subrayado-top"></div>
                 <div class="subrayado-bottom"></div>
             </div>
-            <div>
-                <div class="formaciones-tabla">
-                    <div class="formaciones-tabla-educacion">
-                        <h3>Educacion</h3>
-                        <div class="formacion-item">
-                            <div class="formacion-item-year">2023 - 2025 (en curso)</div>
-                            <div class="formacion-item-datos">
-                                <div class="formacion-item-datos_titulo">TECNICO SUPERIOR EN DESARROLLO DE SOFTWARE
-                                </div>
-                                <div class="formacion-item-datos_subtitulo">Instituto de Formación Técnica Superior N°
-                                    29</div>
-                                <p>Materias aprobadas : 14/23</p>
-                            </div>
-                        </div>
-                        <div class="formacion-item">
-                            <div class="formacion-item-year">2022</div>
-                            <div class="formacion-item-datos">
-                                <div class="formacion-item-datos_titulo">ORACLE NEXT EDUCATION</div>
-                                <div class="formacion-item-datos_subtitulo">Alura Latam</div>
-                                <p>Lógica de programación - Front-end - Java - Emprendimiento</p>
-                            </div>
-                        </div>
-                        <div class="formacion-item">
-                            <div class="formacion-item-year">1994 - 1996</div>
-                            <div class="formacion-item-datos">
-                                <div class="formacion-item-datos_titulo">CONTADOR PUBLICO NACIONAL<BR>Y LIC.EN
-                                    ADMINISTRACION</div>
-                                <div class="formacion-item-datos_subtitulo">Universidad Nacional de Mar del
-                                    Plata</div>
-                                <p>Tercer año aprobado, 21 materias. Incompleto. </p>
-                            </div>
-                        </div>
-                        <div class="formacion-item">
-                            <div class="formacion-item-year">1989 - 1993</div>
-                            <div class="formacion-item-datos">
-                                <div class="formacion-item-datos_titulo">BACHILLER CONTABLE</div>
-                                <div class="formacion-item-datos_subtitulo">Escuela de Educación Media N°2</div>
-                                <p>Promedio general 8.63</p>
-                            </div>
+            <div class="acordeon-grid">
+                <!-- Columna 1: Formación -->
+                <div class="acordeon-columna">
+                    <h3>Formación</h3>
+
+                    <div class="acordeon-item">
+                        <button class="acordeon-boton">🎓 Técnico Superior en Desarrollo de Software
+                            (2023-2025)</button>
+                        <div class="acordeon-contenido">
+                            <p>Instituto de Formación Técnica Superior N°29.<br>Materias aprobadas: 14/23.</p>
                         </div>
                     </div>
 
-                    <div class="formaciones-tabla-experiencia">
-                        <h3>Experiencia</h3>
-                        <div class="formacion-item">
-                            <div class="formacion-item-year">2002 ( actualidad )</div>
-                            <div class="formacion-item-datos">
-                                <div class="formacion-item-datos_titulo">HOTEL SPA REPUBLICA</div>
-                                <div class="formacion-item-datos_subtitulo">Jefe de Administración</div>
-                                <p>Jefe de Administración. Tesorero. Confección de Estados de Resultados
-                                    mensuales.
-                                    Administración de
-                                    personal. Informes financieros. Liquidación de sueldos. Control de stock y
-                                    costos de aaybb. Liquidación
-                                    mensual de impuestos y cierre de balance anual para Estudio.</p>
-                            </div>
-                        </div>
-                        <div class="formacion-item">
-                            <div class="formacion-item-year">1999 - 2002</div>
-                            <div class="formacion-item-datos">
-                                <div class="formacion-item-datos_titulo">PROVINTEL S.R.L.</div>
-                                <div class="formacion-item-datos_subtitulo">Analista Contable</div>
-                                <p>Contaduría. Conciliaciones bancarias. Liquidación de sueldos. Administración
-                                    de personal. Informes
-                                    gerenciales. Administración de Proveedores y Agencias Comerciales.</p>
-                            </div>
-                        </div>
-                        <div class="formacion-item">
-                            <div class="formacion-item-year">1997 - 1999</div>
-                            <div class="formacion-item-datos">
-                                <div class="formacion-item-datos_titulo">CULTIVOS S.R.L.</div>
-                                <div class="formacion-item-datos_subtitulo">Administrativo - Contable</div>
-                                <p>Facturación. Control y gestión de cuentas corrientes de clientes. Pagos a
-                                    Proveedores. Conciliaciones
-                                    bancarias. Control de stock. Despacho y seguimiento de mercaderías.
-                                    Liquidación de comisiones a
-                                    vendedores. Liquidación de sueldos e impuestos. Registraciones contables.
-                                    Preparación de balances.
-                                    Ajustes al cierre. Informes contables de uso interno.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="formacion-item">
-                            <div class="formacion-item-year">1995 - 1996</div>
-                            <div class="formacion-item-datos">
-                                <div class="formacion-item-datos_titulo">ESTUDIO CONTABLE DR. DANIEL ANGEL
-                                    FUMARONI</div>
-                                <div class="formacion-item-datos_subtitulo">Cadete administrativo</div>
-                                <p>Registraciones en libros de IVA. Imputaciones contables. DD.JJ. IVA y Cargas
-                                    Sociales. Liquidación de
-                                    sueldos. Trámites impositivos, bancarios, etc.</p>
-                            </div>
+                    <div class="acordeon-item">
+                        <button class="acordeon-boton">🎓 Oracle Next Education (2022)</button>
+                        <div class="acordeon-contenido">
+                            <p>Alura Latam - Lógica de programación, Front-end, Java, Emprendimiento.</p>
                         </div>
                     </div>
+
+                    <div class="acordeon-item">
+                        <button class="acordeon-boton">🎓 Contador Público Nacional y Lic. en Administración
+                            (1994-1996)</button>
+                        <div class="acordeon-contenido">
+                            <p>Universidad Nacional de Mar del Plata.<br>21 materias aprobadas. Tercer año completo.</p>
+                        </div>
+                    </div>
+
+                    <div class="acordeon-item">
+                        <button class="acordeon-boton">🎓 Bachiller Contable (1989-1993)</button>
+                        <div class="acordeon-contenido">
+                            <p>Escuela de Educación Media N°2.<br>Promedio general 8.63.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Columna 2: Experiencia -->
+                <div class="acordeon-columna">
+                    <h3>Experiencia</h3>
+
+                    <div class="acordeon-item">
+                        <button class="acordeon-boton">🏢 Hotel Spa República (2002 - Actualidad)</button>
+                        <div class="acordeon-contenido">
+                            <p>Jefe de Administración. Finanzas, RRHH, Liquidación de sueldos e impuestos, informes
+                                financieros, control de stock y costos.</p>
+                        </div>
+                    </div>
+
+                    <div class="acordeon-item">
+                        <button class="acordeon-boton">🏢 Provintel S.R.L. (1999 - 2002)</button>
+                        <div class="acordeon-contenido">
+                            <p>Analista contable. Administración de personal, conciliaciones bancarias, informes
+                                gerenciales.</p>
+                        </div>
+                    </div>
+
+                    <div class="acordeon-item">
+                        <button class="acordeon-boton">🏢 Cultivos S.R.L. (1997 - 1999)</button>
+                        <div class="acordeon-contenido">
+                            <p>Administrativo contable. Facturación, cuentas corrientes, conciliaciones bancarias,
+                                liquidación de sueldos e impuestos.</p>
+                        </div>
+                    </div>
+
+                    <div class="acordeon-item">
+                        <button class="acordeon-boton">🏢 Estudio Contable Dr. Daniel Fumaroni (1995 - 1996)</button>
+                        <div class="acordeon-contenido">
+                            <p>Registraciones contables, liquidación de sueldos e impuestos, trámites impositivos y
+                                bancarios.</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </section>
+
 
         <!-- SECCION SERIES -->
         <a name="Series"></a>
@@ -550,8 +532,25 @@
             credencial.addEventListener('click', function (e) {
                 e.preventDefault();
                 const tarjeta = this.closest('.cert-card');
-                const detalle = tarjeta.querySelector('.detalles'); 
-                detalle.classList.toggle('mostrar');  
+                const detalle = tarjeta.querySelector('.detalles');
+                detalle.classList.toggle('mostrar');
+            });
+        });
+
+
+        // AGREGAR EVENTO A ACORDEON
+        const acordeonBotones = document.querySelectorAll('.acordeon-boton');
+        acordeonBotones.forEach(boton => {
+            boton.addEventListener('click', () => {
+                boton.classList.toggle('activo');
+                const contenido = boton.nextElementSibling;
+                if (contenido.style.maxHeight) {
+                    contenido.style.maxHeight = null;
+                    contenido.style.padding = "0 18px";
+                } else {
+                    contenido.style.maxHeight = contenido.scrollHeight + "px";
+                    contenido.style.padding = "15px 18px";
+                }
             });
         });
     </script>
